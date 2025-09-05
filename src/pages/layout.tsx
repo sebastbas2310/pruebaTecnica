@@ -1,4 +1,4 @@
-import Sidebar from "../components/Sidebar";
+import Sidebar from '../components/Sidebar';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const role: "ADMIN" | "USER" = "ADMIN"; // temporal, luego se obtiene del auth

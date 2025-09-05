@@ -1,6 +1,6 @@
-import { prisma } from "./db";
-import { prismaAdapter } from "@better-auth/prisma-adapter";
-import { betterAuth } from "better-auth";
+/*import { prisma } from './db';
+import { prismaAdapter } from '@better-auth/prisma-adapter';
+import { betterAuth } from '@prisma/client';
 
 
 export const auth = betterAuth({
@@ -20,4 +20,4 @@ await prisma.user.update({ where: { id: user.id }, data: { role: "ADMIN" } });
 }
 }
 }
-});
+});*/

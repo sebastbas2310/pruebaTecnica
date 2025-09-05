@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
-import Sidebar from "../../components/Sidebar";
+import { useState } from 'react';
+import Sidebar from '../../components/Sidebar';
 
-const role = "ADMIN"; // Ajusta según tu lógica
+const role = "ADMIN"; 
 
 export default function Movimientos() {
   const [movimientos, setMovimientos] = useState([

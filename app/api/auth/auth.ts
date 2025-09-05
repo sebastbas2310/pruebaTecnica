@@ -1,2 +1,1 @@
-import { auth } from "@/lib/auth";
-export default auth.apiRoute();
+import { auth } from '@/lib/auth';
