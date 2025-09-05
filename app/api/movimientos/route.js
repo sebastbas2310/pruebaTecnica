@@ -1,5 +1,5 @@
 // GET: Obtener todos los movimientos
-export async function GET(request) {
+/*export async function GET(request) {
   return new Response(JSON.stringify(movimientos), {
     status: 200,
     headers: { 'Content-Type': 'application/json' },
@@ -50,4 +50,4 @@ export async function DELETE(request) {
     status: 200,
     headers: { 'Content-Type': 'application/json' },
   });
-}
+}*/

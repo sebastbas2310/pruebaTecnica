@@ -1,4 +1,4 @@
-import { prisma } from '../../../../lib/prisma';
+/*import { prisma } from '../../../../lib/prisma';
 
 export async function GET(_, { params }) {
   const user = await prisma.user.findUnique({
@@ -35,3 +35,4 @@ export async function DELETE(_, { params }) {
     return Response.json({ error: error.message }, { status: 400 });
   }
 }
+*/
