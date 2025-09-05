@@ -2,7 +2,7 @@
 export async function GET(request) {
   return new Response(JSON.stringify(movimientos), {
     status: 200,
-    headers: { "Content-Type": "application/json" },
+    headers: { 'Content-Type': 'application/json' },
   });
 }
 
@@ -16,7 +16,7 @@ export async function POST(request) {
   movimientos.push(nuevo);
   return new Response(JSON.stringify(nuevo), {
     status: 201,
-    headers: { "Content-Type": "application/json" },
+    headers: { 'Content-Type': 'application/json' },
   });
 }
 
@@ -25,12 +25,14 @@ export async function PUT(request) {
   const body = await request.json();
   const index = movimientos.findIndex((m) => m.id === body.id);
   if (index === -1) {
-    return new Response(JSON.stringify({ error: "No encontrado" }), { status: 404 });
+    return new Response(JSON.stringify({ error: 'No encontrado' }), {
+      status: 404,
+    });
   }
   movimientos[index] = { ...movimientos[index], ...body };
   return new Response(JSON.stringify(movimientos[index]), {
     status: 200,
-    headers: { "Content-Type": "application/json" },
+    headers: { 'Content-Type': 'application/json' },
   });
 }
 
@@ -39,11 +41,13 @@ export async function DELETE(request) {
   const body = await request.json();
   const index = movimientos.findIndex((m) => m.id === body.id);
   if (index === -1) {
-    return new Response(JSON.stringify({ error: "No encontrado" }), { status: 404 });
+    return new Response(JSON.stringify({ error: 'No encontrado' }), {
+      status: 404,
+    });
   }
   const eliminado = movimientos.splice(index, 1)[0];
   return new Response(JSON.stringify(eliminado), {
     status: 200,
-    headers: { "Content-Type": "application/json" },
+    headers: { 'Content-Type': 'application/json' },
   });
 }
