@@ -24,7 +24,7 @@ npm run dev / pnpm run dev
 
   al no poderse conectar a la base de datos el create user del inicio no esta funcional asi que para ingresar del todo a la pagina pon en la ulr /layout ya en la pagina con logica de programacion hice la simulacion del funcionamiento pero si desean ver la logica que habia detras de la api y sus crud pueden ver el codigo en sustespectivas carpetas app/api apesar de que no funcionan por no tener coneccion con base de datos la logica ya esta implementada
 
-###3dificultados 
+### 5. dificultados 
 
 El problema no fue de tu código, fue del entorno de red. Supabase, en su capa gratuita, normalmente asigna una dirección IPv6 para las conexiones directas a la base de datos (PostgreSQL).
 
